@@ -20,6 +20,7 @@ functions="""
 methods="""
 [
     (class_definition
+        name: (identifier)
         body: (block
             (function_definition
                 name: (identifier) @method.name

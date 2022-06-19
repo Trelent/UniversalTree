@@ -11,11 +11,20 @@ parser = Parser(
     ]
 )
 
-test_func="""def test():
-    print("This is a test function")
+test_func="""class apple:
+
+    def __init__():
+        print("apple")
+
+    def test(self):
+        print("This is a test method")
+
+def not_a_method():
+    print("This is not a method")
 """
 
-test_func = bytes(test_func, "utf-8")
-
 result = parser.parse(test_func, "python")
-print(result)
+
+funcs = result["functions"]
+for func in funcs:
+    print(func.name)

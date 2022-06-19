@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Union, List
+from typing import List
 
 
 class NodeType(Enum):
@@ -12,7 +12,7 @@ class NodeType(Enum):
 
 
 class Point:
-    def __init__(self, col: int, line: int) -> None:
+    def __init__(self, line: int, col: int) -> None:
         self.col = col
         self.line = line
 
@@ -80,14 +80,14 @@ class Method:
         docstring: Docstring,
         name: str,
         params: List[str],
-        parent: Class,
+        #parent: Class,
     ) -> None:
         self.body = body
         self.definition = definition
         self.docstring = docstring
         self.name = name
         self.params = params
-        self.parent = parent
+        #self.parent = parent
 
     def __str__(self) -> str:
         return f"Method::{self.name}"
