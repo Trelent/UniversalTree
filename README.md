@@ -10,8 +10,8 @@ ___
 ### Setup
 Before you can use UTree, you must first create a "grammar". This is used to tell the
 underlying library, TreeSitter, how to parse code in any given language. A utility to
-do so is provided in the grammar_builder folder. You must install the tree-sitter
-python module, then run grammar_builder/vendors/_clone_vendors.sh . This script will
+do so is provided in the `grammar_builder` folder. You must install the tree-sitter
+python module, then run `grammar_builder/vendors/_clone_vendors.sh`. This script will
 clone several git repos to this folder, which contain the grammars for various languages.
 
 Combined, these scripts will create a grammar that allows you to parse:
